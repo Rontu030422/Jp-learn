@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1" />
+    <meta name="theme-color" content="#0D1120" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="日语词光" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <title>日语词光 · 一词一星，点亮日语</title>
+    <meta name="description" content="面向中文学习者的 JLPT N5 日语词汇图鉴。假名、中文释义、例句、词汇星图与 FSRS 复习。本地优先，无需注册。" />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="apple-touch-icon" href="./apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./icon-192.png" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230D1120'/%3E%3Ctext x='32' y='42' text-anchor='middle' font-size='32' fill='%23E8B65A'%3E光%3C/text%3E%3C/svg%3E" />
+    <script>
+      (function () {
+        var t = "dark";
+        try {
+          var s = JSON.parse(localStorage.getItem("jp-word-atlas:settings") || "{}");
+          if (s.theme) t = s.theme;
+        } catch (e) {}
+        if (t !== "system") document.documentElement.setAttribute("data-theme", t);
+      })();
+    </script>
+    <script type="module" crossorigin src="/Jp-learn/atlas/assets/index-uitfI-3k.js"></script>
+    <link rel="stylesheet" crossorigin href="/Jp-learn/atlas/assets/index-DmWXXBXO.css">
+  </head>
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0f172a" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="日语学习" />
+  <title>日语学习 · 词光 &amp; 小镇</title>
+  <style>
+    :root { color-scheme: dark; }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Segoe UI", "Noto Sans SC", sans-serif;
+      background: radial-gradient(900px 480px at 50% -20%, #2a3a55, #0f172a 60%);
+      color: #f4efe6;
+      padding: max(24px, env(safe-area-inset-top)) max(20px, env(safe-area-inset-right)) max(32px, env(safe-area-inset-bottom)) max(20px, env(safe-area-inset-left));
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      min-height: 100dvh;
+    }
+    h1 { font-size: clamp(1.6rem, 5vw, 2rem); margin: 0 0 8px; letter-spacing: 0.04em; }
+    p { color: #a8b0c0; margin: 0 0 28px; text-align: center; max-width: 28em; line-height: 1.55; }
+    .cards { display: flex; flex-direction: column; gap: 16px; width: min(420px, 100%); }
+    a.card {
+      display: flex; align-items: center; gap: 16px;
+      min-height: 88px; padding: 18px 20px;
+      border-radius: 20px; text-decoration: none; color: inherit;
+      background: #1e293b; border: 1px solid rgba(255,255,255,0.08);
+      box-shadow: 0 16px 40px -24px rgba(0,0,0,0.7);
+      -webkit-tap-highlight-color: transparent;
+    }
+    a.card:active { transform: scale(0.98); }
+    .mark {
+      width: 56px; height: 56px; border-radius: 14px;
+      display: grid; place-items: center; font-size: 1.6rem; font-weight: 700; flex-shrink: 0;
+    }
+    .atlas .mark { background: #0D1120; color: #E8B65A; }
+    .town .mark { background: #1a2332; color: #e8a87c; }
+    .meta b { display: block; font-size: 1.2rem; margin-bottom: 4px; }
+    .meta span { color: #8a95a8; font-size: 0.92rem; }
+    .hint { margin-top: 28px; font-size: 0.85rem; color: #6b7280; text-align: center; line-height: 1.5; max-width: 26em; }
+  </style>
+</head>
+<body>
+  <h1>日语学习</h1>
+  <p>背单词用「词光」，练对话用「小镇」。手机浏览器打开后可「添加到主屏幕」当 App 用。</p>
+  <div class="cards">
+    <a class="card atlas" href="./atlas/">
+      <span class="mark">光</span>
+      <span class="meta"><b>日语词光</b><span>N5 词汇 · 星图 · FSRS 复习</span></span>
+    </a>
+    <a class="card town" href="./town/">
+      <span class="mark">町</span>
+      <span class="meta"><b>日语小镇</b><span>NPC 对话 · 当场纠错 · 错题本</span></span>
+    </a>
+  </div>
+  <p class="hint">iPhone：Safari 打开 → 分享 →「添加到主屏幕」<br/>Android：Chrome 菜单 →「安装应用」或「添加到主屏幕」</p>
+</body>
+</html>
