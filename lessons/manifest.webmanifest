@@ -1,0 +1,18 @@
+{
+  "name": "日语新概念课",
+  "short_name": "日语课",
+  "description": "一课一课 · 听答 · 场景 · 单词句型 · 语速 · 跟读纠音",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#f5ebe0",
+  "theme_color": "#f5ebe0",
+  "lang": "zh-CN",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📖</text></svg>",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
